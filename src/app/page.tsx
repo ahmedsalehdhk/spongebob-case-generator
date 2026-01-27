@@ -1,6 +1,12 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "800"],
+});
 
 function toSpongebobCase(input: string): string {
   let result = "";
@@ -38,7 +44,9 @@ export default function Home() {
   }, [text]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 bg-[url('/spongebob-meme.gif')] bg-cover bg-center">
+    <div
+      className={`${poppins.className} min-h-screen flex items-center justify-center px-4 bg-[url('/spongebob-meme.gif')] bg-cover bg-center`}
+    >
       <main className="w-full max-w-2xl bg-yellow-100/95 backdrop-blur-sm rounded-2xl shadow-lg p-8 border border-yellow-200">
         <h1 className="text-3xl font-extrabold text-yellow-900 text-center mb-6">
           sPoNgEbOb TeXt GeNeRaToR
@@ -80,6 +88,17 @@ export default function Home() {
             </button>
           </div>
         </div>
+        <p className="mt-4 text-xs text-yellow-800 text-center">
+          created by{" "}
+          <a
+            href="https://github.com/ahmedsalehdhk"
+            target="_blank"
+            rel="noreferrer"
+            className="underline font-semibold"
+          >
+            ahmedsalehdhk
+          </a>
+        </p>
       </main>
     </div>
   );
