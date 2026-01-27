@@ -48,12 +48,12 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$p
 ;
 function toSpongebobCase(input) {
     let result = "";
-    let makeLower = true;
+    let makeLower = Math.random() < 0.5;
     for (const char of input){
         if (/\s/.test(char)) {
-            // Reset pattern at word boundaries (whitespace)
+            // Reset pattern at word boundaries (whitespace) with random start case
             result += char;
-            makeLower = true;
+            makeLower = Math.random() < 0.5;
             continue;
         }
         if (!/[a-z]/i.test(char)) {
@@ -90,8 +90,8 @@ function Home() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                    className: "block text-sm font-medium text-yellow-900 mb-2",
-                    children: "Enter your text"
+                    className: "block text-sm font-semibold text-yellow-800 mb-2",
+                    children: "Enter your text:"
                 }, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
                     lineNumber: 55,
@@ -123,7 +123,7 @@ function Home() {
                             className: "min-h-[4rem] rounded-lg bg-yellow-200/80 border border-yellow-300 flex flex-col sm:flex-row sm:items-center gap-3 px-4 py-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "flex-1 text-2xl font-extrabold text-yellow-900 break-words text-center sm:text-left",
+                                    className: "flex-1 text-2xl font-bold text-yellow-900 break-words text-center sm:text-left",
                                     children: spongebobText || "yOuR tExT wIlL aPpEaR HeRe"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",

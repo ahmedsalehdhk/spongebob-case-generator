@@ -1,3 +1,21 @@
 [00:00:01.902] Server  LOG     ✓ Ready in 1777ms
 [00:00:04.313] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:04:23.546] Server  LOG     ✓ Compiled in 458ms
+[00:10:14.035] Server  LOG     ✓ Compiled in 26ms
+[00:11:04.224] Server  LOG     ✓ Compiled in 49ms
+[00:13:09.219] Server  LOG     ✓ Compiled in 38ms
+[00:13:12.954] Server  LOG     ✓ Compiled in 34ms
+[00:13:21.371] Server  LOG     ✓ Compiled in 30ms
+[00:22:30.360] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[00:22:30.360] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[00:22:30.360] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[00:22:30.360] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[00:22:30.360] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[00:22:30.360] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[00:22:30.360] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[00:22:30.487] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:33.828] Server  LOG     ✓ Compiled in 136ms
+[00:23:59.599] Server  LOG     ✓ Compiled in 63ms
+[00:24:02.675] Server  LOG     ✓ Compiled in 16ms
+[00:24:11.037] Server  LOG     ✓ Compiled in 30ms
+[00:28:43.603] Server  LOG     ✓ Compiled in 34ms

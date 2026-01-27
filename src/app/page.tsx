@@ -10,13 +10,13 @@ const poppins = Poppins({
 
 function toSpongebobCase(input: string): string {
   let result = "";
-  let makeLower = true;
+  let makeLower = Math.random() < 0.5;
 
   for (const char of input) {
     if (/\s/.test(char)) {
-      // Reset pattern at word boundaries (whitespace)
+      // Reset pattern at word boundaries (whitespace) with random start case
       result += char;
-      makeLower = true;
+      makeLower = Math.random() < 0.5;
       continue;
     }
 
@@ -52,8 +52,8 @@ export default function Home() {
           sPoNgEbOb TeXt GeNeRaToR
         </h1>
 
-        <label className="block text-sm font-medium text-yellow-900 mb-2">
-          Enter your text
+        <label className="block text-sm font-semibold text-yellow-800 mb-2">
+          Enter your text:
         </label>
         <input
           type="text"
@@ -68,7 +68,7 @@ export default function Home() {
             sPoNgEbOb cAsE:
           </p>
           <div className="min-h-[4rem] rounded-lg bg-yellow-200/80 border border-yellow-300 flex flex-col sm:flex-row sm:items-center gap-3 px-4 py-3">
-            <p className="flex-1 text-2xl font-extrabold text-yellow-900 break-words text-center sm:text-left">
+            <p className="flex-1 text-2xl font-bold text-yellow-900 break-words text-center sm:text-left">
               {spongebobText || "yOuR tExT wIlL aPpEaR HeRe"}
             </p>
             <button
