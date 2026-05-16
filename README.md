@@ -1,3 +1,5 @@
+Visit: https://spongebob-case-generator.vercel.app/
+
 # 🧽 sPoNgEbOb TeXt GeNeRaToR
 
 Generate mOcKiNg sPoNgEbOb case text instantly in your browser! This project provides a fun and interactive tool for converting regular text into SpOnGeBoB cAsE, inspired by the famous SpongeBob meme.
